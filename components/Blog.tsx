@@ -9,8 +9,8 @@ interface BlogProps {
 
 export const Blog: React.FC<BlogProps> = ({ navigate }) => {
   return (
-    <div>
-        <h1 className="text-4xl font-bold tracking-tight text-center mb-12">
+    <div className="py-12">
+        <h1 className="text-4xl font-bold tracking-tight text-center mb-12 text-neutral-900 dark:text-white">
             From the Desk
         </h1>
         <div className="space-y-10">
@@ -22,7 +22,7 @@ export const Blog: React.FC<BlogProps> = ({ navigate }) => {
                     e.preventDefault();
                     navigate(`/blog/${post.slug}`);
                   }}
-                  className="block"
+                  className="block focus:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 rounded-lg"
                 >
                   <BlogPostCard post={post} />
                 </a>

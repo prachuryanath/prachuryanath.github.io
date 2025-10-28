@@ -8,6 +8,7 @@ import { ViewMoreLink } from './ViewMoreLink';
 import { ExperienceCard } from './ExperienceCard';
 import { ProjectCard } from './ProjectCard';
 import { EducationCard } from './EducationCard';
+import { IconMail, IconPhone } from './Icons';
 import {
   PROFILE,
   PUBLICATIONS,
@@ -35,12 +36,12 @@ export const Home: React.FC<HomeProps> = ({ navigate }) => {
           <img
             src={PROFILE.avatar}
             alt={PROFILE.name}
-            className="w-32 h-32 rounded-full mx-auto mb-6 ring-4 ring-neutral-200 object-cover"
+            className="w-32 h-32 rounded-full mx-auto mb-6 ring-4 ring-neutral-200 dark:ring-neutral-700 object-cover"
           />
-          <h1 className="text-4xl sm:text-5xl font-bold tracking-tight mb-4">
+          <h1 className="text-4xl sm:text-5xl font-bold tracking-tight mb-4 text-neutral-900 dark:text-white">
             {PROFILE.name}
           </h1>
-          <p className="text-xl text-neutral-600 max-w-3xl mx-auto mb-8">
+          <p className="text-xl text-neutral-600 dark:text-neutral-300 max-w-3xl mx-auto mb-8">
             {PROFILE.summary}
           </p>
           <div className="flex justify-center items-center space-x-6">
@@ -92,10 +93,10 @@ export const Home: React.FC<HomeProps> = ({ navigate }) => {
             <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-3xl space-y-6">
                 {TECHNICAL_SKILLS.map((category) => (
                     <div key={category.name}>
-                        <h3 className="text-xl font-semibold text-neutral-700 mb-3">{category.name}</h3>
+                        <h3 className="text-xl font-semibold text-neutral-700 dark:text-neutral-200 mb-3">{category.name}</h3>
                         <div className="flex flex-wrap gap-2">
                             {category.skills.map((skill) => (
-                                <span key={skill} className="bg-neutral-100 text-neutral-700 text-sm font-medium px-3 py-1.5 rounded-md">
+                                <span key={skill} className="bg-neutral-100 text-neutral-700 dark:bg-neutral-800 dark:text-neutral-200 text-sm font-medium px-3 py-1.5 rounded-md">
                                     {skill}
                                 </span>
                             ))}
@@ -126,7 +127,7 @@ export const Home: React.FC<HomeProps> = ({ navigate }) => {
                   e.preventDefault();
                   navigate(`/blog/${post.slug}`);
                 }}
-                className="block"
+                className="block focus:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 rounded-lg"
               >
                 <BlogPostCard post={post} />
               </a>
@@ -136,6 +137,31 @@ export const Home: React.FC<HomeProps> = ({ navigate }) => {
             <ViewMoreLink href="/blog" navigate={navigate}>View All Posts</ViewMoreLink>
           </div>
         </Section>
+
+      {/* Contact Section */}
+      <Section id="contact" title="Get In Touch">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-3xl text-center">
+            <p className="text-lg text-neutral-600 dark:text-neutral-400 mb-8 max-w-2xl mx-auto">
+                I'm always open to discussing new projects, creative ideas, or opportunities. Feel free to reach out.
+            </p>
+            <div className="flex flex-col sm:flex-row justify-center items-center gap-8 mb-10">
+                <a href={`mailto:${PROFILE.contact.email}`} className="flex items-center gap-3 text-lg font-medium text-neutral-700 dark:text-neutral-300 hover:text-primary-600 dark:hover:text-primary-400 transition-colors">
+                    <IconMail className="w-6 h-6" />
+                    <span>{PROFILE.contact.email}</span>
+                </a>
+                <a href={`tel:${PROFILE.contact.phone.replace(/\s|-/g, '')}`} className="flex items-center gap-3 text-lg font-medium text-neutral-700 dark:text-neutral-300 hover:text-primary-600 dark:hover:text-primary-400 transition-colors">
+                    <IconPhone className="w-6 h-6" />
+                    <span>{PROFILE.contact.phone}</span>
+                </a>
+            </div>
+             <a 
+                href={`mailto:${PROFILE.contact.email}`}
+                className="inline-block bg-primary-600 text-white font-semibold px-8 py-3 rounded-lg hover:bg-primary-700 transition-all duration-300 transform hover:scale-105 shadow-lg"
+             >
+                Say Hello
+            </a>
+        </div>
+    </Section>
 
     </>
   );

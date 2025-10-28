@@ -9,8 +9,8 @@ interface PhotographyProps {
 
 export const Photography: React.FC<PhotographyProps> = ({ navigate }) => {
   return (
-    <div>
-        <h1 className="text-4xl font-bold tracking-tight text-center mb-12">
+    <div className="py-12">
+        <h1 className="text-4xl font-bold tracking-tight text-center mb-12 text-neutral-900 dark:text-white">
             Gallery
         </h1>
         <PhotoGallery photos={PHOTOGRAPHY_IMAGES} />
