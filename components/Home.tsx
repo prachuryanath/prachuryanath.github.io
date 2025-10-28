@@ -26,7 +26,7 @@ interface HomeProps {
 
 export const Home: React.FC<HomeProps> = ({ navigate }) => {
   const latestBlogPosts = BLOG_POSTS.slice(0, 2);
-  const galleryPreviewImages = PHOTOGRAPHY_IMAGES.slice(0, 6);
+  const galleryPreviewImages = PHOTOGRAPHY_IMAGES.slice(0, 4);
 
   return (
     <>

@@ -17,7 +17,7 @@ export const Modal: React.FC<ModalProps> = ({ isOpen, onClose, children }) => {
       role="dialog"
     >
       <div 
-        className="relative bg-white dark:bg-neutral-900 p-4 rounded-lg max-w-4xl max-h-[90vh] w-full"
+        className="relative bg-white dark:bg-neutral-900 p-4 rounded-lg w-auto max-h-[95vh]"
         onClick={(e) => e.stopPropagation()} // Prevent closing when clicking inside the modal
       >
         <button 
