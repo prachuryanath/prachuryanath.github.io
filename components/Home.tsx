@@ -109,7 +109,7 @@ export const Home: React.FC<HomeProps> = ({ navigate }) => {
         {/* Photography Section */}
         <Section id="photography" title="Photography">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-            <PhotoGallery photos={galleryPreviewImages} />
+            <PhotoGallery photos={galleryPreviewImages} gridClass="grid grid-cols-2 md:grid-cols-4 gap-4" />
             <div className="text-center mt-12">
               <ViewMoreLink href="/photography" navigate={navigate}>View Full Gallery</ViewMoreLink>
             </div>
