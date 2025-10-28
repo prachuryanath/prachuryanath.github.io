@@ -1,78 +1,53 @@
-import React, { useState, useCallback } from 'react';
-import { Modal } from './Modal';
+import React, { useState } from 'react';
 import { type Photo } from '../types';
+import { Modal } from './Modal';
 
 interface PhotoGalleryProps {
-    photos: Photo[];
+  photos: Photo[];
 }
 
 const PhotoGalleryComponent: React.FC<PhotoGalleryProps> = ({ photos }) => {
-    const [selectedImageIndex, setSelectedImageIndex] = useState<number | null>(null);
+  const [selectedImage, setSelectedImage] = useState<Photo | null>(null);
 
-    const handleOpenModal = (index: number) => {
-        setSelectedImageIndex(index);
-    };
+  const openModal = (photo: Photo) => {
+    setSelectedImage(photo);
+  };
 
-    const handleCloseModal = () => {
-        setSelectedImageIndex(null);
-    };
+  const closeModal = () => {
+    setSelectedImage(null);
+  };
 
-    const handleNextImage = useCallback(() => {
-        if (selectedImageIndex === null) return;
-        setSelectedImageIndex((prevIndex) => (prevIndex! + 1) % photos.length);
-    }, [selectedImageIndex, photos.length]);
-
-    const handlePrevImage = useCallback(() => {
-        if (selectedImageIndex === null) return;
-        setSelectedImageIndex((prevIndex) => (prevIndex! - 1 + photos.length) % photos.length);
-    }, [selectedImageIndex, photos.length]);
-
-    const selectedImage = selectedImageIndex !== null ? photos[selectedImageIndex] : null;
-
-    return (
-        <>
-            <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
-                {photos.map((photo, index) => (
-                    <div key={photo.id} className="group relative cursor-pointer" onClick={() => handleOpenModal(index)}>
-                        <img 
-                            src={photo.src} 
-                            alt={photo.alt} 
-                            className="w-full h-full object-cover aspect-square transition-transform duration-300 group-hover:scale-105 rounded-md"
-                        />
-                         <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-40 transition-opacity duration-300 flex items-center justify-center rounded-md">
-                            <p className="text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-center p-2 font-medium">{photo.caption}</p>
-                        </div>
-                    </div>
-                ))}
+  return (
+    <>
+      <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
+        {photos.map((photo) => (
+          <div key={photo.id} className="relative group overflow-hidden rounded-lg cursor-pointer" onClick={() => openModal(photo)}>
+            <img 
+              src={photo.src} 
+              alt={photo.alt} 
+              className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
+            />
+            <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-40 transition-all duration-300 flex items-center justify-center">
+              <p className="text-white text-center p-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300 font-semibold">{photo.caption}</p>
             </div>
-            <Modal isOpen={!!selectedImage} onClose={handleCloseModal}>
-                {selectedImage && (
-                    <div className="relative">
-                        <img 
-                            src={selectedImage.src} 
-                            alt={selectedImage.alt}
-                            className="w-full h-auto object-contain max-h-[80vh] rounded"
-                        />
-                        <p className="text-center text-neutral-600 dark:text-neutral-300 mt-2">{selectedImage.caption}</p>
-                        <button 
-                            onClick={(e) => { e.stopPropagation(); handlePrevImage(); }}
-                            className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-12 bg-white/80 dark:bg-neutral-800/80 rounded-full p-2 hover:bg-white dark:hover:bg-neutral-700 transition-colors text-neutral-800 dark:text-neutral-200"
-                            aria-label="Previous image"
-                        >
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><polyline points="15 18 9 12 15 6"></polyline></svg>
-                        </button>
-                        <button 
-                            onClick={(e) => { e.stopPropagation(); handleNextImage(); }}
-                            className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-12 bg-white/80 dark:bg-neutral-800/80 rounded-full p-2 hover:bg-white dark:hover:bg-neutral-700 transition-colors text-neutral-800 dark:text-neutral-200"
-                            aria-label="Next image"
-                        >
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
-                        </button>
-                    </div>
-                )}
-            </Modal>
-        </>
-    );
+          </div>
+        ))}
+      </div>
+
+      <Modal isOpen={!!selectedImage} onClose={closeModal}>
+        {selectedImage && (
+          <div className="flex flex-col items-center">
+            <img 
+              src={selectedImage.src} 
+              alt={selectedImage.alt} 
+              className="max-w-full max-h-[80vh] object-contain rounded-lg"
+            />
+            <p className="mt-4 text-center text-neutral-800 dark:text-neutral-200 font-medium">{selectedImage.caption}</p>
+          </div>
+        )}
+      </Modal>
+    </>
+  );
 };
 
 export const PhotoGallery = React.memo(PhotoGalleryComponent);

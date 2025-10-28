@@ -9,27 +9,20 @@ interface BlogPostProps {
 
 export const BlogPost: React.FC<BlogPostProps> = ({ post, navigate }) => {
   return (
-    <article className="py-8 sm:py-12">
-      <header className="text-center mb-12">
-        <h1 className="text-4xl font-bold tracking-tight text-neutral-800 dark:text-neutral-100 mb-3">
-            {post.title}
-        </h1>
-        <p className="text-md italic text-neutral-500 dark:text-neutral-400">
-            {post.date}
-        </p>
-      </header>
-      
-      <div className="prose prose-neutral dark:prose-invert max-w-none text-lg leading-relaxed space-y-6">
+    <div className="max-w-3xl mx-auto py-12">
+      <article className="prose prose-lg dark:prose-invert">
+        <h1>{post.title}</h1>
+        <p className="text-sm text-neutral-500 dark:text-neutral-400">{post.date}</p>
+        
         {post.content.map((paragraph, index) => (
           <p key={index}>{paragraph}</p>
         ))}
-      </div>
-
+      </article>
       <div className="text-center mt-16">
         <ViewMoreLink href="/blog" isBackLink navigate={navigate}>
-            Back to All Posts
+          Back to Blog
         </ViewMoreLink>
       </div>
-    </article>
+    </div>
   );
 };
