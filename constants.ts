@@ -117,7 +117,7 @@ export const TECHNICAL_SKILLS: SkillCategory[] = [
 export const BLOG_POSTS: BlogPost[] = [
     {
       title: '2:11 AM',
-      slug: 'day 2',
+      slug: 'day-2',
       date: 'October 27, 2025',
       excerpt: "so, it’s currently 2:11 am. i promised myself yesterday that i’d write something everyday to make it into a habit, so here it goes. the world’s currently asleep, at least in my timezone, but my mind is wide awake. there's a kind of peace the night arrives with, bringing silence yet heavy in its own way as silence doesn't always mean calmness.",
       content: [
@@ -126,7 +126,7 @@ export const BLOG_POSTS: BlogPost[] = [
     },
     {
       title: 'on my mind',
-      slug: 'day 1',
+      slug: 'day-1',
       date: 'October 26, 2025',
       excerpt: 'i want to write something. i want to get back at life. i have lived so long living in the past that i’ve forgotten how to be in the present. there’s always something on my mind, an endless train of thoughts that i keep talking to myself to find answers.',
       content: [
