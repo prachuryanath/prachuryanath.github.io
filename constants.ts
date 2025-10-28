@@ -152,5 +152,5 @@ export const PHOTOGRAPHY_IMAGES: Photo[] = [
     { id: 3, src: 'https://raw.githubusercontent.com/prachuryanath/prachuryanath.github.io/refs/heads/main/imgs/PXL_20250518_123550246.jpg', alt: 'A serene view of the Swiss Alps', caption: 'Beauty of Peacock' },
     { id: 4, src: 'https://raw.githubusercontent.com/prachuryanath/prachuryanath.github.io/refs/heads/main/imgs/PXL_20250907_152037502.jpg', alt: 'The Colosseum in Rome', caption: 'Walberla Hike' },
     { id: 5, src: 'https://raw.githubusercontent.com/prachuryanath/prachuryanath.github.io/refs/heads/main/imgs/PXL_20250920_153414843.jpg', alt: 'Canals of Venice', caption: 'Wurzburg Views' },
-    { id: 6, src: 'https://github.com/prachuryanath/prachuryanath.github.io/blob/main/imgs/PXL_20251024_092030545%20(1).jpg', alt: 'A quiet German village street', caption: 'Autumn Charm' },
+    { id: 6, src: 'https://raw.githubusercontent.com/prachuryanath/prachuryanath.github.io/refs/heads/main/imgs/PXL_20251024_092030545%20(1).jpg', alt: 'A quiet German village street', caption: 'Autumn Charm' },
 ];
