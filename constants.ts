@@ -147,10 +147,10 @@ export const BLOG_POSTS: BlogPost[] = [
 ];
 
 export const PHOTOGRAPHY_IMAGES: Photo[] = [
-    { id: 1, src: 'https://images.unsplash.com/photo-1533929736458-ca588d08c8be?auto=format&fit=crop&q=80&w=2070', alt: 'A street in a European city at night', caption: 'City Lights' },
-    { id: 2, src: 'https://images.unsplash.com/photo-1502602898657-3e91760c0337?auto=format&fit=crop&q=80&w=2070', alt: 'The Eiffel Tower in Paris', caption: 'Parisian Dream' },
-    { id: 3, src: 'https://images.unsplash.com/photo-1487798452839-c748a30661e4?auto=format&fit=crop&q=80&w=2070', alt: 'A serene view of the Swiss Alps', caption: 'Alpine Serenity' },
-    { id: 4, src: 'https://images.unsplash.com/photo-1529655683826-1c821e8e5652?auto=format&fit=crop&q=80&w=1974', alt: 'The Colosseum in Rome', caption: 'Roman History' },
-    { id: 5, src: 'https://images.unsplash.com/photo-1505832688320-9e6d0e34b415?auto=format&fit=crop&q=80&w=2070', alt: 'Canals of Venice', caption: 'Venetian Views' },
-    { id: 6, src: 'https://images.unsplash.com/photo-1542015247-83286392d759?auto=format&fit=crop&q=80&w=2070', alt: 'A quiet German village street', caption: 'German Charm' },
+    { id: 1, src: 'https://raw.githubusercontent.com/prachuryanath/prachuryanath.github.io/refs/heads/main/imgs/IMG_5980.jpg', alt: 'A street in a European city at night', caption: 'Rialto Bridge' },
+    { id: 2, src: 'https://raw.githubusercontent.com/prachuryanath/prachuryanath.github.io/refs/heads/main/imgs/PXL_20250517_123037687.jpg', alt: 'The Eiffel Tower in Paris', caption: 'Alpine Dream' },
+    { id: 3, src: 'https://raw.githubusercontent.com/prachuryanath/prachuryanath.github.io/refs/heads/main/imgs/PXL_20250518_123550246.jpg', alt: 'A serene view of the Swiss Alps', caption: 'Beauty of Peacock' },
+    { id: 4, src: 'https://raw.githubusercontent.com/prachuryanath/prachuryanath.github.io/refs/heads/main/imgs/PXL_20250907_152037502.jpg', alt: 'The Colosseum in Rome', caption: 'Walberla Hike' },
+    { id: 5, src: 'https://raw.githubusercontent.com/prachuryanath/prachuryanath.github.io/refs/heads/main/imgs/PXL_20250920_153414843.jpg', alt: 'Canals of Venice', caption: 'Wurzburg Views' },
+    { id: 6, src: 'https://github.com/prachuryanath/prachuryanath.github.io/blob/main/imgs/PXL_20251024_092030545%20(1).jpg', alt: 'A quiet German village street', caption: 'Autumn Charm' },
 ];
