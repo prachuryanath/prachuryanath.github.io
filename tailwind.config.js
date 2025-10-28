@@ -11,10 +11,10 @@ export default {
     extend: {
       colors: {
         neutral: colors.slate,
-        primary: colors.blue,
+        primary: colors.gray,
       },
       animation: {
-        'fade-in-up': 'fadeInUp 0.6s ease-out forwards',
+        'fade-in-up': 'fadeInUp 0.8s ease-out forwards',
       },
       keyframes: {
         fadeInUp: {
