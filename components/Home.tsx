@@ -8,7 +8,7 @@ import { ViewMoreLink } from './ViewMoreLink';
 import { ExperienceCard } from './ExperienceCard';
 import { ProjectCard } from './ProjectCard';
 import { EducationCard } from './EducationCard';
-import { IconMail, IconPhone } from './Icons';
+import { IconMail } from './Icons';
 import {
   PROFILE,
   PUBLICATIONS,
@@ -144,14 +144,10 @@ export const Home: React.FC<HomeProps> = ({ navigate }) => {
             <p className="text-lg text-neutral-600 dark:text-neutral-400 mb-8 max-w-2xl mx-auto">
                 I'm always open to discussing new projects, creative ideas, or opportunities. Feel free to reach out.
             </p>
-            <div className="flex flex-col sm:flex-row justify-center items-center gap-8 mb-10">
+            <div className="flex justify-center items-center gap-8 mb-10">
                 <a href={`mailto:${PROFILE.contact.email}`} className="flex items-center gap-3 text-lg font-medium text-neutral-700 dark:text-neutral-300 hover:text-primary-600 dark:hover:text-primary-400 transition-colors">
                     <IconMail className="w-6 h-6" />
                     <span>{PROFILE.contact.email}</span>
-                </a>
-                <a href={`tel:${PROFILE.contact.phone.replace(/\s|-/g, '')}`} className="flex items-center gap-3 text-lg font-medium text-neutral-700 dark:text-neutral-300 hover:text-primary-600 dark:hover:text-primary-400 transition-colors">
-                    <IconPhone className="w-6 h-6" />
-                    <span>{PROFILE.contact.phone}</span>
                 </a>
             </div>
              <a 

@@ -8,7 +8,7 @@ import {
   type Education,
   type SkillCategory,
 } from './types';
-import { IconGitHub, IconLinkedIn, IconScholar, IconMail, IconPhone, IconInstagram } from './components/Icons';
+import { IconGitHub, IconLinkedIn, IconScholar, IconMail, IconInstagram, IconResume } from './components/Icons';
 
 export const PROFILE = {
     name: 'Prachurya Nath',
@@ -17,12 +17,12 @@ export const PROFILE = {
     avatar: 'https://raw.githubusercontent.com/prachuryanath/prachuryanath.github.io/refs/heads/main/copenhagen.JPG',
     contact: {
       email: 'prachuryanath00@gmail.com',
-      phone: '+49-176-775-84936',
     },
     socials: [
       { name: 'Email', url: 'mailto:prachuryanath00@gmail.com', icon: IconMail },
       { name: 'GitHub', url: 'https://github.com/prachuryanath', icon: IconGitHub },
       { name: 'LinkedIn', url: 'https://www.linkedin.com/in/prachuryanath/', icon: IconLinkedIn },
+      { name: 'Resume', url: 'https://drive.google.com/file/d/1fiMXn7YBrMqZIMcoG1YLus11fFcQgCbX/view?usp=sharing', icon: IconResume }, // Add a link to your resume PDF here
       { name: 'Google Scholar', url: 'https://scholar.google.com/citations?user=your-scholar-id', icon: IconScholar }, // Replace with actual scholar ID if available
       { name: 'Instagram', url: 'https://www.instagram.com/prachuryeah/', icon: IconInstagram },
     ],
