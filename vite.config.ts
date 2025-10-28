@@ -4,5 +4,6 @@ import react from '@vitejs/plugin-react';
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
-  base: '/prachuryanath.github.io/', // IMPORTANT: Replace with your repository name if different
+  // For a user page like `prachuryanath.github.io`, the base should be '/'
+  base: '/',
 });

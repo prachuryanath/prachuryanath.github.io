@@ -154,43 +154,27 @@ export const PHOTOGRAPHY_IMAGES: Photo[] = [
 
 ---
 
-## Deployment to GitHub Pages
+## Deployment to GitHub Pages (Automated)
 
-This project is configured to be deployed to GitHub Pages.
+This project uses GitHub Actions to automatically build and deploy your website whenever you push changes to the `main` branch.
 
-### Step 1: Set Your Repository Name
+### Step 1: Push Your Code
 
-Open the `vite.config.ts` file. You **must** update the `base` property to match your GitHub repository name. For a URL like `https://prachuryanath.github.io/`, the repository name is `prachuryanath.github.io`.
-
-```javascript
-// vite.config.ts
-export default defineConfig({
-  // ...
-  base: '/prachuryanath.github.io/', // <-- IMPORTANT: Change this!
-});
-```
-
-### Step 2: Build the Project
-
-Run the following command in your terminal. This will create a `dist` folder with all the optimized files for your website.
+Make sure all your latest changes, including the `.github/workflows/deploy.yml` file, are pushed to your GitHub repository's `main` branch.
 
 ```bash
-npm install && npm run build
+git add .
+git commit -m "Set up automated deployment"
+git push origin main
 ```
 
-*(Note: You may need to define the `build` script in `package.json` if it doesn't exist: `"build": "vite build"`)*
-
-### Step 3: Push the `dist` Folder to GitHub
-
-Push your entire project, including the newly created `dist` folder, to your GitHub repository.
-
-### Step 4: Configure GitHub Pages
+### Step 2: Configure GitHub Pages Settings
 
 1.  Go to your repository on GitHub.
 2.  Click on the **Settings** tab.
 3.  In the left sidebar, click on **Pages**.
-4.  Under "Build and deployment", for the **Source**, select **Deploy from a branch**.
-5.  For the **Branch**, select your main branch (e.g., `main` or `master`) and choose the `/dist` folder from the dropdown.
-6.  Click **Save**.
+4.  Under "Build and deployment", for the **Source**, select **GitHub Actions**.
 
-GitHub will now build and deploy your site. It might take a few minutes. Your portfolio will be live at the URL provided on that page (e.g., `https://your-username.github.io/your-repo-name/`).
+That's it! GitHub will now look for the `deploy.yml` workflow. After your first push with this new file, go to the **Actions** tab in your repository. You will see the workflow running. Once it completes successfully (it might take a minute or two), your website will be live at `https://prachuryanath.github.io/`.
+
+From now on, you just need to push your code changes, and the site will update automatically.
