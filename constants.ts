@@ -14,7 +14,7 @@ export const PROFILE = {
     name: 'Prachurya Nath',
     title: 'Computational Engineering Student',
     summary: 'A passionate and driven student pursuing a Master\'s in Computational Engineering, with a strong foundation in Electrical Engineering and hands-on experience in machine learning, deep learning, and software development. Seeking to leverage skills in privacy-preserving technologies and model optimization to solve complex, real-world problems.',
-    avatar: 'https://i.ibb.co/6yvGM21/profile-pic.jpg',
+    avatar: 'https://raw.githubusercontent.com/prachuryanath/prachuryanath.github.io/refs/heads/main/copenhagen.JPG',
     contact: {
       email: 'prachuryanath00@gmail.com',
       phone: '+49-176-775-84936',
@@ -22,7 +22,7 @@ export const PROFILE = {
     socials: [
       { name: 'Email', url: 'mailto:prachuryanath00@gmail.com', icon: IconMail },
       { name: 'GitHub', url: 'https://github.com/prachuryanath', icon: IconGitHub },
-      { name: 'LinkedIn', url: 'https://www.linkedin.com/in/prachurya-nath/', icon: IconLinkedIn },
+      { name: 'LinkedIn', url: 'https://www.linkedin.com/in/prachuryanath/', icon: IconLinkedIn },
       { name: 'Google Scholar', url: 'https://scholar.google.com/citations?user=your-scholar-id', icon: IconScholar }, // Replace with actual scholar ID if available
       { name: 'Instagram', url: 'https://www.instagram.com/prachuryeah/', icon: IconInstagram },
     ],
@@ -82,7 +82,7 @@ export const PROJECTS: Project[] = [
         title: 'SabhyaServer Recommendation',
         description: 'Created a multi-class topic classifier by fine-tuning a DistilBERT model for automated keyword extraction. Built a content recommendation system that suggests files to users through semantic vector embeddings.',
         technologies: ['Python', 'Flask', 'Scikit-learn', 'Tensorflow'],
-        link: 'https://github.com/prachuryanath/Sabhya-Server',
+        link: 'https://github.com/azad-ali786/SabhyServer_RecommendationSys_SIH',
     },
 ];
 
@@ -116,25 +116,21 @@ export const TECHNICAL_SKILLS: SkillCategory[] = [
 
 export const BLOG_POSTS: BlogPost[] = [
     {
-      title: 'The AI Conundrum of 2024',
-      slug: 'the-ai-conundrum-of-2024',
-      date: 'May 3, 2024',
-      excerpt: 'In the rapidly evolving landscape of artificial intelligence, 2024 has presented a unique set of challenges and opportunities that are reshaping industries and redefining the boundaries of innovation.',
+      title: '2:11 AM',
+      slug: 'day 2',
+      date: 'October 27, 2025',
+      excerpt: "so, it’s currently 2:11 am. i promised myself yesterday that i’d write something everyday to make it into a habit, so here it goes. the world’s currently asleep, at least in my timezone, but my mind is wide awake. there's a kind of peace the night arrives with, bringing silence yet heavy in its own way as silence doesn't always mean calmness.",
       content: [
-        'The year 2024 will be remembered as a pivotal moment in the AI timeline. The proliferation of advanced large language models (LLMs) and generative AI has moved from niche applications to mainstream integration. Companies are grappling with how to best leverage these technologies, facing a conundrum: balancing the immense potential for productivity gains with the ethical, security, and implementation challenges that arise.',
-        'One of the most significant trends is the push towards smaller, more efficient models. The race for billions of parameters is giving way to a more nuanced approach, focusing on model optimization, quantization, and domain-specific fine-tuning. This shift is crucial for deploying AI on edge devices, enhancing privacy and reducing latency—a field I am deeply passionate about.',
-        'As we look ahead, the ability to create robust, fair, and transparent AI systems will be the true measure of success. The conundrum is not just about building powerful models, but about building responsible ones that augment human capability and contribute positively to society.'
+        "so, it’s currently 2:11 am.i promised myself yesterday that i’d write something everyday to make it into a habit, so here it goes. the world’s currently asleep, at least in my timezone, but my mind is wide awake. there's a kind of peace the night arrives with, bringing silence yet heavy in its own way as silence doesn't always mean calmness.i’ve been sleeping after 2 am for years now, most nights. maybe i’ve grown to love the night, because it feels familiar, maybe with the darkness or maybe it's that i don't want the new day to begin yet. cause when i wake up in the morning, i always feel that the world will reset with a new beginning and i am not ready for that. there's also a comforting thing about nights which is hard to describe - just me quietly trying to understand myself.a few days ago, a sentence kept playing in my mind,'kehne ko bahut kuch hai, magar kisse kahe hum. yeah, it’s from a song , but at that moment i couldn't even remember where it came from, but it kind of arrived uninvited. maybe because that's how memories work - they come back when you have least expect them, just to remind you something. that line also gave me a reason to start writing again - maybe to journal my thoughts or just to share them somewhere outside my head.i think i’ve found a home in these nights. it's crowded and messy now with thoughts, but it's also where i feel the safest. maybe that's why i don't sleep early anymore, maybe i’ve grown way too comfortable living like this.maybe it’ll will end one day. maybe tomorrow i’ll sleep early, most likely not. maybe not for another thousand nights, but who can really tell the future. for now, the night asks for my company softly, and by morning, this too will become the past."
       ],
     },
     {
-      title: 'First Month in Germany: An Expat’s Diary',
-      slug: 'first-month-in-germany',
-      date: 'April 15, 2024',
-      excerpt: 'Moving to a new country is a whirlwind of experiences. From navigating bureaucracy to discovering cultural nuances, here are my reflections on the first month of living in Germany.',
+      title: 'on my mind',
+      slug: 'day 1',
+      date: 'October 26, 2025',
+      excerpt: 'i want to write something. i want to get back at life. i have lived so long living in the past that i’ve forgotten how to be in the present. there’s always something on my mind, an endless train of thoughts that i keep talking to myself to find answers.',
       content: [
-        'The first thing that strikes you about Germany is the efficiency. Public transport is punctual, processes are well-defined, and there is a tangible sense of order. However, this order comes with its own set of challenges, particularly the infamous German bureaucracy. Registering my address (Anmeldung) and setting up a bank account was a masterclass in patience and paperwork.',
-        'Beyond the paperwork, the cultural immersion has been fascinating. The directness in communication, the emphasis on punctuality, and the deep appreciation for rules are not just stereotypes; they are integral parts of daily life. I\'ve learned that "how are you?" is not a casual greeting but a genuine question expecting a detailed answer.',
-        'But perhaps the most rewarding part has been the small discoveries: the taste of freshly baked Brötchen on a Sunday morning, the beauty of a walk through a well-preserved Altstadt (old town), and the simple joy of saying "Danke" and "Bitte" and feeling a little more at home. The journey is just beginning, but Germany has already started to feel like a place of growth and new beginnings.'
+        "i want to write something. i want to get back at life. i have lived so long living in the past that i’ve forgotten how to be in the present. there’s always something on my mind, an endless train of thoughts that i keep talking to myself to find answers. is this life even worth living or something that i can cherish only after it’s gone ? on my ears, music plays endlessly every hour, every day. it’s my way to calm myself down, to quiet the noise. but sometimes i wonder will this music as a kind of escape, a wall i built for myself will last forever or i’ll just get tired of it one day. i miss feeling alive - not in the adrenaline sports kind of way. but just in the ordinary moments where you pause for a second, look at your life and just feel present and content. i try to move on with the day pretending i’m all fine, but deep inside there's a silent ache which walks with me as a shadow, never fading away. i keep telling myself it's all just a phase as everyone says and goes through, but we all know phases are meant to pass. there will only be a few nights when i’m not staring at the ceiling and keep questioning myself on what i’m waiting for - a sign, an answer, or just some kind of wisdom to make sense of it all. but i won't say there's no hope, i still quietly hope that when i wake up one morning, everything i kept holding on to which turned out to be heavy will be gone. that i’ll notice joy in the smallest things - the sound of rain on a hot summer day, the glimpse of sun on a cloudy winter morning or just an old couple holding hands walking down the street. maybe there's a version of me in the future who will finally learn to live in the present, and the only way i can reach him is to slowly building upon the present, one small moment at a time."
       ]
     },
 ];

@@ -51,6 +51,15 @@ export const Home: React.FC<HomeProps> = ({ navigate }) => {
         </div>
       </section>
 
+      {/* Education Section */}
+      <Section id="education" title="Education">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-3xl space-y-8">
+            {EDUCATION.map((edu, index) => (
+                <EducationCard key={index} education={edu} />
+            ))}
+        </div>
+      </Section>
+
       {/* Experience Section */}
       <Section id="experience" title="Experience">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-3xl space-y-10">
@@ -127,15 +136,6 @@ export const Home: React.FC<HomeProps> = ({ navigate }) => {
             <ViewMoreLink href="/blog" navigate={navigate}>View All Posts</ViewMoreLink>
           </div>
         </Section>
-
-      {/* Education Section */}
-      <Section id="education" title="Education">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-3xl space-y-8">
-            {EDUCATION.map((edu, index) => (
-                <EducationCard key={index} education={edu} />
-            ))}
-        </div>
-      </Section>
 
     </>
   );
