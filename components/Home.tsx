@@ -1,82 +1,115 @@
 import React from 'react';
 import { Section } from './Section';
 import { SocialLink } from './SocialLink';
-import { EducationCard } from './EducationCard';
-import { ExperienceCard } from './ExperienceCard';
-import { ProjectCard } from './ProjectCard';
 import { PublicationCard } from './PublicationCard';
 import { BlogPostCard } from './BlogPostCard';
 import { PhotoGallery } from './PhotoGallery';
 import { ViewMoreLink } from './ViewMoreLink';
-import { SOCIAL_LINKS, EDUCATION, EXPERIENCE, PROJECTS, PUBLICATIONS, BLOG_POSTS, PHOTOGRAPHY_IMAGES, TECHNICAL_SKILLS } from '../constants';
+import { ExperienceCard } from './ExperienceCard';
+import { ProjectCard } from './ProjectCard';
+import { EducationCard } from './EducationCard';
+import {
+  PROFILE,
+  PUBLICATIONS,
+  BLOG_POSTS,
+  PHOTOGRAPHY_IMAGES,
+  EXPERIENCE,
+  PROJECTS,
+  EDUCATION,
+  TECHNICAL_SKILLS,
+} from '../constants';
 
 interface HomeProps {
-    navigate: (path: string) => void;
+  navigate: (path: string) => void;
 }
 
 export const Home: React.FC<HomeProps> = ({ navigate }) => {
+  const latestBlogPosts = BLOG_POSTS.slice(0, 2);
+  const galleryPreviewImages = PHOTOGRAPHY_IMAGES.slice(0, 6);
+
   return (
-    <div className="space-y-16 sm:space-y-20">
-      <section id="about" className="text-center py-10">
-        <img 
-            src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80" 
-            alt="Jane Doe"
-            className="w-40 h-40 rounded-full mx-auto mb-6 object-cover"
-        />
-        <h1 className="text-4xl font-bold tracking-tight mb-2">Jane Doe</h1>
-        <p className="text-xl text-neutral-600 mb-6">Senior Software Engineer at Google</p>
-        <div className="flex justify-center space-x-6">
-            {SOCIAL_LINKS.map(link => <SocialLink key={link.name} {...link} />)}
+    <>
+      {/* Hero/About Section */}
+      <section id="about" className="py-20 sm:py-32 text-center scroll-mt-16">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <img
+            src={PROFILE.avatar}
+            alt={PROFILE.name}
+            className="w-32 h-32 rounded-full mx-auto mb-6 ring-4 ring-neutral-200 object-cover"
+          />
+          <h1 className="text-4xl sm:text-5xl font-bold tracking-tight mb-4">
+            {PROFILE.name}
+          </h1>
+          <p className="text-xl text-neutral-600 max-w-3xl mx-auto mb-8">
+            {PROFILE.summary}
+          </p>
+          <div className="flex justify-center items-center space-x-6">
+            {PROFILE.socials.map((link) => (
+              <SocialLink key={link.name} {...link} />
+            ))}
+          </div>
         </div>
-        <p className="max-w-3xl mx-auto mt-8 text-lg text-neutral-700 leading-relaxed">
-            I'm a software engineer specializing in building exceptional digital experiences. Currently, I’m focused on building accessible, human-centered products at Google. I'm passionate about machine learning, web development, and photography.
-        </p>
       </section>
 
-      <Section id="education" title="Education">
-        <div className="space-y-8">
-            {EDUCATION.map((edu, index) => <EducationCard key={index} education={edu} />)}
-        </div>
-      </Section>
-
+      {/* Experience Section */}
       <Section id="experience" title="Experience">
-        <div className="space-y-12">
-            {EXPERIENCE.map((exp, index) => <ExperienceCard key={index} experience={exp} />)}
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-3xl space-y-10">
+          {EXPERIENCE.map((exp, index) => (
+            <ExperienceCard key={index} experience={exp} />
+          ))}
         </div>
       </Section>
-
-       <Section id="skills" title="Technical Skills">
-        <div className="flex flex-col items-center space-y-6">
-          {TECHNICAL_SKILLS.map(category => (
-            <div key={category.name} className="w-full max-w-2xl">
-              <h3 className="text-lg font-semibold text-center mb-3">{category.name}</h3>
-              <div className="flex flex-wrap justify-center gap-2">
-                {category.skills.map(skill => (
-                   <span key={skill} className="bg-neutral-100 text-neutral-700 text-sm font-medium px-3 py-1.5 rounded-md">
-                    {skill}
-                  </span>
-                ))}
-              </div>
-            </div>
+      
+      {/* Projects Section */}
+      <Section id="projects" title="Projects">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl grid grid-cols-1 md:grid-cols-2 gap-8">
+          {PROJECTS.map((proj, index) => (
+            <ProjectCard key={index} project={proj} />
           ))}
         </div>
       </Section>
 
-      <Section id="projects" title="Projects">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            {PROJECTS.map((project, index) => <ProjectCard key={index} project={project} />)}
-        </div>
-      </Section>
-      
+      {/* Publications Section */}
       <Section id="publications" title="Publications">
-        <div className="space-y-10">
-            {PUBLICATIONS.map((pub, index) => <PublicationCard key={index} publication={pub} />)}
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-3xl space-y-10">
+          {PUBLICATIONS.map((pub) => (
+            <PublicationCard key={pub.title} publication={pub} />
+          ))}
         </div>
       </Section>
 
-      <Section id="blog" title="Recent Posts">
-        <div className="space-y-10">
-            {BLOG_POSTS.slice(0, 2).map(post => (
+      {/* Technical Skills Section */}
+        <Section id="skills" title="Technical Skills">
+            <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-3xl space-y-6">
+                {TECHNICAL_SKILLS.map((category) => (
+                    <div key={category.name}>
+                        <h3 className="text-xl font-semibold text-neutral-700 mb-3">{category.name}</h3>
+                        <div className="flex flex-wrap gap-2">
+                            {category.skills.map((skill) => (
+                                <span key={skill} className="bg-neutral-100 text-neutral-700 text-sm font-medium px-3 py-1.5 rounded-md">
+                                    {skill}
+                                </span>
+                            ))}
+                        </div>
+                    </div>
+                ))}
+            </div>
+        </Section>
+
+        {/* Photography Section */}
+        <Section id="photography" title="Photography">
+          <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+            <PhotoGallery photos={galleryPreviewImages} />
+            <div className="text-center mt-12">
+              <ViewMoreLink href="/photography" navigate={navigate}>View Full Gallery</ViewMoreLink>
+            </div>
+          </div>
+        </Section>
+
+        {/* Blog Section */}
+        <Section id="blog" title="Recent Posts">
+          <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl grid grid-cols-1 md:grid-cols-2 gap-8">
+            {latestBlogPosts.map((post) => (
               <a 
                 key={post.slug}
                 href={`#/blog/${post.slug}`}
@@ -89,18 +122,21 @@ export const Home: React.FC<HomeProps> = ({ navigate }) => {
                 <BlogPostCard post={post} />
               </a>
             ))}
-        </div>
-        <div className="text-center mt-12">
+          </div>
+          <div className="text-center mt-12">
             <ViewMoreLink href="/blog" navigate={navigate}>View All Posts</ViewMoreLink>
+          </div>
+        </Section>
+
+      {/* Education Section */}
+      <Section id="education" title="Education">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-3xl space-y-8">
+            {EDUCATION.map((edu, index) => (
+                <EducationCard key={index} education={edu} />
+            ))}
         </div>
       </Section>
 
-      <Section id="photography" title="Photography">
-        <PhotoGallery photos={PHOTOGRAPHY_IMAGES.slice(0, 6)} />
-         <div className="text-center mt-12">
-            <ViewMoreLink href="/photography" navigate={navigate}>View Full Gallery</ViewMoreLink>
-        </div>
-      </Section>
-    </div>
+    </>
   );
 };

@@ -1,23 +1,18 @@
-import React, { useState, useCallback, useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Header } from './components/Header';
 import { Home } from './components/Home';
 import { Blog } from './components/Blog';
 import { BlogPost } from './components/BlogPost';
 import { Photography } from './components/Photography';
-import { BLOG_POSTS } from './constants';
+import { BLOG_POSTS, PROFILE } from './constants';
 
 const App: React.FC = () => {
-  // Use location.hash for routing, compatible with GitHub Pages
-  const [currentPath, setCurrentPath] = useState(window.location.hash || '#/');
-
-  const navigate = useCallback((path: string) => {
-    window.location.hash = path;
-    // The state update will be triggered by the hashchange event listener
-  }, []);
+  const [currentPath, setCurrentPath] = useState(window.location.hash.slice(1) || '/');
 
   useEffect(() => {
     const handleHashChange = () => {
-      setCurrentPath(window.location.hash || '#/');
+      setCurrentPath(window.location.hash.slice(1) || '/');
+      window.scrollTo(0, 0);
     };
 
     window.addEventListener('hashchange', handleHashChange);
@@ -26,35 +21,41 @@ const App: React.FC = () => {
     };
   }, []);
 
+  const navigate = (path: string) => {
+    window.location.hash = path;
+  };
+
   const renderContent = () => {
-    if (currentPath.startsWith('#/blog/')) {
-      const slug = currentPath.split('#/blog/')[1];
-      const post = BLOG_POSTS.find(p => p.slug === slug);
+    if (currentPath === '/blog') {
+      return <Blog navigate={navigate} />;
+    }
+    if (currentPath.startsWith('/blog/')) {
+      const slug = currentPath.split('/blog/')[1];
+      const post = BLOG_POSTS.find((p) => p.slug === slug);
       if (post) {
         return <BlogPost post={post} navigate={navigate} />;
       }
     }
-    
-    switch (currentPath) {
-      case '#/blog':
-        return <Blog navigate={navigate} />;
-      case '#/photography':
-        return <Photography navigate={navigate} />;
-      default:
-        return <Home navigate={navigate} />;
+    if (currentPath === '/photography') {
+      return <Photography navigate={navigate} />;
     }
+    
+    // Fallback for not found or root
+    return <Home navigate={navigate} />;
   };
 
   return (
-    <div className="bg-white text-neutral-800 font-sans antialiased">
-      <Header navigate={navigate} currentPath={currentPath} />
-      <main className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl">
+    <>
+      <Header currentPath={currentPath} navigate={navigate} />
+      <main className="container mx-auto px-4 sm:px-6 lg:px-8">
         {renderContent()}
       </main>
-      <footer className="text-center py-8 mt-16 border-t border-neutral-200 text-sm text-neutral-500">
-        <p>&copy; {new Date().getFullYear()} Jane Doe. All rights reserved.</p>
+      <footer className="py-8 border-t border-neutral-200 mt-16">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center text-neutral-500 text-sm">
+            <p>&copy; {new Date().getFullYear()} {PROFILE.name}. All Rights Reserved.</p>
+        </div>
       </footer>
-    </div>
+    </>
   );
 };
 
