@@ -20,7 +20,7 @@ export interface BlogPost {
   slug: string;
   date: string;
   excerpt: string;
-  content: string[];
+  content: string;
 }
 
 export interface Photo {

@@ -118,45 +118,54 @@ export const BLOG_POSTS: BlogPost[] = [
     {
       title: 'between songs',
       slug: 'day-3',
-      date: 'October 30, 2025',
+      date: 'October 29, 2025',
       excerpt: "when one song ends and another begins, there's a strange silence in between. a second of emptinesss, a moment of nothingness. that in-between feels too familiar. like waiting for a message that never comes, or standing at a station just after the train just left. isn't it the same with us ? ",
-      content: [
-        "when one song ends and another begins, there's a strange silence in between. a second of emptinesss, a moment of nothingness. that in-between feels too familiar. like waiting for a message that never comes, or standing at a station just after the train just left. isn't it the same with us ? there might be so much happening in your life, but there will be a moment when everything stops for you. you will find it so hard to make sense of the stillness, but deep down you know that you have to keep moving forward towards the next stop.",
-        "so, it might be difficult for someone like me to truly understand how peace feels like, but i know for certain that silence isn't peace, silence is the echo of what just existed. in the same sense, noise isn't totally chaos, sometimes that's the way to remind ourselves we're still alive . when the noise starts to fade away, will you feel content ? or will you start to miss it, the way we sometimes miss things that once overwhelmed us ? what about the silence in between, does it bring calmness or it reminds you of what's gone ? some people long for something, some linger in the middle, and there are those who keep waiting for the next song to make sense of their quiet.",
-        "and definitely, that's the hardest part. to learn to live in those moments of pause. they will stretch longer than you expect, where there's both confusion and comfort. memories will return without permission, the things you definitely didn't ask for. you have to just feel the pause, because it doesn't ask us for meaning, it will simply want to exist as long as it feels like.",
-        "so coming back to the silence in between songs (hoping you haven't turned on crossfade in settings), you never really know what will play if shuffle is on. yet, you don't turn it off, you just wait for the next tone to catch you again . isn't it same with life ? no one knows what will happen in the future, but you still have to keep playing your song today.",
-        "maybe in the end, it's not about avoiding noise or chasing peace, but learning to just listen, and really listen to what that silence wants to tell you. the pause might not be always comforting, but maybe it's the only place where we honestly hear ourselves clearly, even it's just for a brief moment.",
-        "maybe all we need is to learn to live in the brief silence, the one between a song and the next."
-      ],
+      content: `when one song ends and another begins, there's a strange silence in between. a second of emptinesss, a moment of nothingness. that in-between feels too familiar. like waiting for a message that never comes, or standing at a station just after the train just left. isn't it the same with us ? there might be so much happening in your life, but there will be a moment when everything stops for you. you will find it so hard to make sense of the stillness, but deep down you know that you have to keep moving forward towards the next stop.
+
+so, it might be difficult for someone like me to truly understand how peace feels like, but i know for certain that silence isn't peace, silence is the echo of what just existed. in the same sense, noise isn't totally chaos, sometimes that's the way to remind ourselves we're still alive . when the noise starts to fade away, will you feel content ? or will you start to miss it, the way we sometimes miss things that once overwhelmed us ? what about the silence in between, does it bring calmness or it reminds you of what's gone ? some people long for something, some linger in the middle, and there are those who keep waiting for the next song to make sense of their quiet.
+
+and definitely, that's the hardest part. to learn to live in those moments of pause. they will stretch longer than you expect, where there's both confusion and comfort. memories will return without permission, the things you definitely didn't ask for. you have to just feel the pause, because it doesn't ask us for meaning, it will simply want to exist as long as it feels like.
+
+so coming back to the silence in between songs (hoping you haven't turned on crossfade in settings), you never really know what will play if shuffle is on. yet, you don't turn it off, you just wait for the next tone to catch you again . isn't it same with life ? no one knows what will happen in the future, but you still have to keep playing your song today.
+
+maybe in the end, it's not about avoiding noise or chasing peace, but learning to just listen, and really listen to what that silence wants to tell you. the pause might not be always comforting, but maybe it's the only place where we honestly hear ourselves clearly, even it's just for a brief moment.
+
+maybe all we need is to learn to live in the brief silence, the one between a song and the next.`
     },
     {
       title: '2:11 AM',
       slug: 'day-2',
       date: 'October 28, 2025',
       excerpt: "so, it's currently 2:11 am. i promised myself yesterday that i'd write something everyday to make it into a habit, so here it goes. the world's currently asleep, at least in my timezone, but my mind is wide awake. there's a kind of peace the night arrives with, bringing silence yet heavy in its own way as silence doesn't always mean calmness.",
-      content: [
-        "so, it's currently 2:11 am.",
-        "i promised myself yesterday that i'd write something everyday to make it into a habit, so here it goes. the world's currently asleep, at least in my timezone, but my mind is wide awake. there's a kind of peace the night arrives with, bringing silence yet heavy in its own way as silence doesn't always mean calmness.",
-        "i've been sleeping after 2 am for years now, most nights. maybe i've grown to love the night, because it feels familiar, maybe with the darkness or maybe it's that i don't want the new day to begin yet. cause when i wake up in the morning, i always feel that the world will reset with a new beginning and i am not ready for that. there's also a comforting thing about nights which is hard to describe - just me quietly trying to understand myself.",
-        "a few days ago, a sentence kept playing in my mind,",
-        "'kehne ko bahut kuch hai, magar kisse kahe hum.'",
-        "yeah, it's from a song , but at that moment i couldn't even remember where it came from, but it kind of arrived uninvited. maybe because that's how memories work - they come back when you have least expect them, just to remind you something. that line also gave me a reason to start writing again - maybe to journal my thoughts or just to share them somewhere outside my head.",
-        "i think i've found a home in these nights. it's crowded and messy now with thoughts, but it's also where i feel the safest. maybe that's why i don't sleep early anymore, maybe i've grown way too comfortable living like this.",
-        "maybe it'll will end one day. maybe tomorrow i'll sleep early, most likely not. maybe not for another thousand nights, but who can really tell the future. for now, the night asks for my company softly, and by morning, this too will become the past."
-      ],
+      content: `so, it's currently 2:11 am.
+
+i promised myself yesterday that i'd write something everyday to make it into a habit, so here it goes. the world's currently asleep, at least in my timezone, but my mind is wide awake. there's a kind of peace the night arrives with, bringing silence yet heavy in its own way as silence doesn't always mean calmness.
+
+i've been sleeping after 2 am for years now, most nights. maybe i've grown to love the night, because it feels familiar, maybe with the darkness or maybe it's that i don't want the new day to begin yet. cause when i wake up in the morning, i always feel that the world will reset with a new beginning and i am not ready for that. there's also a comforting thing about nights which is hard to describe - just me quietly trying to understand myself.
+
+a few days ago, a sentence kept playing in my mind,
+*'kehne ko bahut kuch hai, magar kisse kahe hum.'*
+
+yeah, it's from a song , but at that moment i couldn't even remember where it came from, but it kind of arrived uninvited. maybe because that's how memories work - they come back when you have least expect them, just to remind you something. that line also gave me a reason to start writing again - maybe to journal my thoughts or just to share them somewhere outside my head.
+
+i think i've found a home in these nights. it's crowded and messy now with thoughts, but it's also where i feel the safest. maybe that's why i don't sleep early anymore, maybe i've grown way too comfortable living like this.
+
+maybe it'll will end one day. maybe tomorrow i'll sleep early, most likely not. maybe not for another thousand nights, but who can really tell the future. for now, the night asks for my company softly, and by morning, this too will become the past.`
     },
     {
       title: 'on my mind',
       slug: 'day-1',
       date: 'October 26, 2025',
       excerpt: "i want to write something. i want to get back at life. i have lived so long living in the past that i've forgotten how to be in the present. there's always something on my mind, an endless train of thoughts that i keep talking to myself to find answers.",
-      content: [
-        "i want to write something. i want to get back at life. i have lived so long living in the past that i've forgotten how to be in the present. there's always something on my mind, an endless train of thoughts that i keep talking to myself to find answers.",
-        "is this life even worth living or something that i can cherish only after it's gone ? on my ears, music plays endlessly every hour, every day. it's my way to calm myself down, to quiet the noise. but sometimes i wonder will this music as a kind of escape, a wall i built for myself will last forever or i'll just get tired of it one day.",
-        "i miss feeling alive - not in the adrenaline sports kind of way. but just in the ordinary moments where you pause for a second, look at your life and just feel present and content. i try to move on with the day pretending i'm all fine, but deep inside there's a silent ache which walks with me as a shadow, never fading away.",
-        "i keep telling myself it's all just a phase as everyone says and goes through, but we all know phases are meant to pass. there will only be a few nights when i'm not staring at the ceiling and keep questioning myself on what i'm waiting for - a sign, an answer, or just some kind of wisdom to make sense of it all. but i won't say there's no hope, i still quietly hope that when i wake up one morning, everything i kept holding on to which turned out to be heavy will be gone. that i'll notice joy in the smallest things - the sound of rain on a hot summer day, the glimpse of sun on a cloudy winter morning or just an old couple holding hands walking down the street.",
-        "maybe there's a version of me in the future who will finally learn to live in the present, and the only way i can reach him is to slowly building upon the present, one small moment at a time."
-      ]
+      content: `i want to write something. i want to get back at life. i have lived so long living in the past that i've forgotten how to be in the present. there's always something on my mind, an endless train of thoughts that i keep talking to myself to find answers.
+
+is this life even worth living or something that i can cherish only after it's gone ? on my ears, music plays endlessly every hour, every day. it's my way to calm myself down, to quiet the noise. but sometimes i wonder will this music as a kind of escape, a wall i built for myself will last forever or i'll just get tired of it one day.
+
+i miss feeling alive - not in the adrenaline sports kind of way. but just in the ordinary moments where you pause for a second, look at your life and just feel present and content. i try to move on with the day pretending i'm all fine, but deep inside there's a silent ache which walks with me as a shadow, never fading away.
+
+i keep telling myself it's all just a phase as everyone says and goes through, but we all know phases are meant to pass. there will only be a few nights when i'm not staring at the ceiling and keep questioning myself on what i'm waiting for - a sign, an answer, or just some kind of wisdom to make sense of it all. but i won't say there's no hope, i still quietly hope that when i wake up one morning, everything i kept holding on to which turned out to be heavy will be gone. that i'll notice joy in the smallest things - the sound of rain on a hot summer day, the glimpse of sun on a cloudy winter morning or just an old couple holding hands walking down the street.
+
+maybe there's a version of me in the future who will finally learn to live in the present, and the only way i can reach him is to slowly building upon the present, one small moment at a time.`
     },
 ];
 
