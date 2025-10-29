@@ -116,9 +116,23 @@ export const TECHNICAL_SKILLS: SkillCategory[] = [
 
 export const BLOG_POSTS: BlogPost[] = [
     {
+      title: 'between songs',
+      slug: 'day-3',
+      date: 'October 30, 2025',
+      excerpt: "when one song ends and another begins, there's a strange silence in between. a second of emptinesss, a moment of nothingness. that in-between feels too familiar. like waiting for a message that never comes, or standing at a station just after the train just left. isn't it the same with us ? ",
+      content: [
+        "when one song ends and another begins, there's a strange silence in between. a second of emptinesss, a moment of nothingness. that in-between feels too familiar. like waiting for a message that never comes, or standing at a station just after the train just left. isn't it the same with us ? there might be so much happening in your life, but there will be a moment when everything stops for you. you will find it so hard to make sense of the stillness, but deep down you know that you have to keep moving forward towards the next stop.",
+        "so, it might be difficult for someone like me to truly understand how peace feels like, but i know for certain that silence isn't peace, silence is the echo of what just existed. in the same sense, noise isn't totally chaos, sometimes that's the way to remind ourselves we're still alive . when the noise starts to fade away, will you feel content ? or will you start to miss it, the way we sometimes miss things that once overwhelmed us ? what about the silence in between, does it bring calmness or it reminds you of what's gone ? some people long for something, some linger in the middle, and there are those who keep waiting for the next song to make sense of their quiet.",
+        "and definitely, that's the hardest part. to learn to live in those moments of pause. they will stretch longer than you expect, where there's both confusion and comfort. memories will return without permission, the things you definitely didn't ask for. you have to just feel the pause, because it doesn't ask us for meaning, it will simply want to exist as long as it feels like.",
+        "so coming back to the silence in between songs (hoping you haven't turned on crossfade in settings), you never really know what will play if shuffle is on. yet, you don't turn it off, you just wait for the next tone to catch you again . isn't it same with life ? no one knows what will happen in the future, but you still have to keep playing your song today.",
+        "maybe in the end, it's not about avoiding noise or chasing peace, but learning to just listen, and really listen to what that silence wants to tell you. the pause might not be always comforting, but maybe it's the only place where we honestly hear ourselves clearly, even it's just for a brief moment.",
+        "maybe all we need is to learn to live in the brief silence, the one between a song and the next."
+      ],
+    },
+    {
       title: '2:11 AM',
       slug: 'day-2',
-      date: 'October 27, 2025',
+      date: 'October 28, 2025',
       excerpt: "so, it's currently 2:11 am. i promised myself yesterday that i'd write something everyday to make it into a habit, so here it goes. the world's currently asleep, at least in my timezone, but my mind is wide awake. there's a kind of peace the night arrives with, bringing silence yet heavy in its own way as silence doesn't always mean calmness.",
       content: [
         "so, it's currently 2:11 am.",
