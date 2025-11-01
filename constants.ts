@@ -116,6 +116,23 @@ export const TECHNICAL_SKILLS: SkillCategory[] = [
 
 export const BLOG_POSTS: BlogPost[] = [
     {
+      title: 'comfort of everyday ?',
+      slug: 'day-4',
+      date: 'November 1, 2025',
+      excerpt: " it's strange how comfort starts to look like repetition. and in the same way, repetition sometimes begins to feel like comfort. but somewhere in between, it also make me question myself, am i moving ahead at all, or just circling the same path every year. ",
+      content: `*'every night feels the same - same songs, same scrolling, same staring into the dark.'*
+
+it's strange how comfort starts to look like repetition. and in the same way, repetition sometimes begins to feel like comfort. but somewhere in between, it also make me question myself, am i moving ahead at all, or just circling the same path every year.
+
+routine gives us comfort when life feels unpredictable. people say, when life gives you lemons, make lemonade. and i did that, over and over again. maybe now the jar is overflowing, maybe i've been drinking the same lemonade for too long. maybe the peace i've been looking for was just a “pause” that never ended.
+
+it's been two years and a month now, in the same room, same bed, same quiet little town. sometimes i feel like time stopped here, like i just stopped myself. i scroll through other people's lives, and see how far they've gone. and somewhere inside, i feel what if i just stayed behind when compared to others ? that makes me jealous, even if i won't like to admit it.
+
+yet there are small escapes - when i just walk around the town capturing random things that catch my eye, sometimes people or sometime just trees and buildings. sometimes i just immerse myself in movies or a new series, losing myself in a world that makes me forget everything. and on some days, i try to go to the mountains, where everything feels quieter and when you look at your surroundings from a height, there's a kind of peace which is tough to describe. maybe these moments remind me of not being stuck, that i can still see, still feel or just create something.
+
+it's not the routine which is the problem, maybe the way i think about it. the constant need of comparing myself to others, the constant ask of validation, or the need to be somewhere else, or just to be someone else. maybe this comfort isn't a trap, but some kind of peace i'm learning to accept.`
+    },
+    {
       title: 'between songs',
       slug: 'day-3',
       date: 'October 29, 2025',
