@@ -38,10 +38,10 @@ export const BlogPost: React.FC<BlogPostProps> = ({ post, navigate }) => {
   return (
     <div className="max-w-3xl mx-auto py-12">
       <article className="prose prose-lg dark:prose-invert font-serif">
-        <h1 className="font-semibold">{post.title}</h1>
+        <h1>{post.title}</h1>
         <p className="text-sm text-neutral-500 dark:text-neutral-400">{post.date}</p>
         
-        <MarkdownRenderer content={post.content.join('\n\n')} />
+        <MarkdownRenderer content={post.content} />
       </article>
       <div className="text-center mt-16">
         <ViewMoreLink href="/blog" isBackLink navigate={navigate}>
