@@ -10,7 +10,7 @@ interface BlogProps {
 export const Blog: React.FC<BlogProps> = ({ navigate }) => {
   return (
     <div className="py-12">
-      <h1 className="text-4xl font-bold tracking-tight text-center mb-12 text-neutral-900 dark:text-white font-serif">
+      <h1 className="text-4xl font-semibold tracking-tight text-center mb-12 text-neutral-900 dark:text-white font-serif">
         Blog
       </h1>
       <div className="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
