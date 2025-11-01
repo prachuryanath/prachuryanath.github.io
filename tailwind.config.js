@@ -9,6 +9,9 @@ export default {
   darkMode: 'class',
   theme: {
     extend: {
+      fontFamily: {
+        serif: ['Lora', 'serif'],
+      },
       colors: {
         neutral: colors.zinc,
         primary: colors.gray,
