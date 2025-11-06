@@ -116,7 +116,22 @@ export const TECHNICAL_SKILLS: SkillCategory[] = [
 
 export const BLOG_POSTS: BlogPost[] = [
     {
-      title: 'comfort of everyday ?',
+      title: 'am i missing something ?',
+      slug: 'day-5',
+      date: 'November 4, 2025',
+      excerpt: " recently, i’ve been feeling like i’m missing something. maybe i’ve always felt that way as far back as i can remember, something like missing a part of myself that i never truly had. ",
+      content: `recently, i’ve been feeling like i’m missing something. maybe i’ve always felt that way as far back as i can remember, something like missing a part of myself that i never truly had.
+
+the warmth of a familiar touch, the call of home from thousand miles away, the kind of effortless happiness that's easy to exist. i miss love so deep i won't ever be able to express, or a true friendship which can keep me awake for the whole night for no specific reason. it's really hard to describe it, like how we long for some things and feel their absence without never defining it in simple terms.
+
+some days feel like i’m missing my own soul, though to be frank i don't believe in the concept of souls, the afterlife, or even anything beyond this one existence of life. but what is this ache that doesn't seem to end if it’s just not a soul ?
+
+maybe this is just nostalgia for a version of me that was never there, or condolences that i offer myself for the way i exist ?
+
+this ain't a call for prayer. as someone who don't want to believe in redemption, signs or just prayers, this is a just a reminder for myself - that even when i feel lost, there's still something inside me. i need to find it myself, and hope for a change.`
+    },
+    {
+      title: 'comfort of everyday',
       slug: 'day-4',
       date: 'November 1, 2025',
       excerpt: " it's strange how comfort starts to look like repetition. and in the same way, repetition sometimes begins to feel like comfort. but somewhere in between, it also make me question myself, am i moving ahead at all, or just circling the same path every year. ",
