@@ -120,21 +120,6 @@ export const BLOG_POSTS: BlogPost[] = [
       slug: 'day-6',
       date: 'November 8, 2025',
       excerpt: " yes, probably a straight yes. as a hopeless romantic who's never been in a relationship, i’ve always wanted a kind of love that never fades away, not after years, not even after decades. but how would i even define love ? ",
-      content: `recently, i’ve been feeling like i’m missing something. maybe i’ve always felt that way as far back as i can remember, something like missing a part of myself that i never truly had.
-
-the warmth of a familiar touch, the call of home from thousand miles away, the kind of effortless happiness that's easy to exist. i miss love so deep i won't ever be able to express, or a true friendship which can keep me awake for the whole night for no specific reason. it's really hard to describe it, like how we long for some things and feel their absence without never defining it in simple terms.
-
-some days feel like i’m missing my own soul, though to be frank i don't believe in the concept of souls, the afterlife, or even anything beyond this one existence of life. but what is this ache that doesn't seem to end if it’s just not a soul ?
-
-maybe this is just nostalgia for a version of me that was never there, or condolences that i offer myself for the way i exist ?
-
-this ain't a call for prayer. as someone who don't want to believe in redemption, signs or just prayers, this is a just a reminder for myself - that even when i feel lost, there's still something inside me. i need to find it myself, and hope for a change.`
-    },
-    {
-      title: 'am i missing something ?',
-      slug: 'day-5',
-      date: 'November 4, 2025',
-      excerpt: " recently, i’ve been feeling like i’m missing something. maybe i’ve always felt that way as far back as i can remember, something like missing a part of myself that i never truly had. ",
       content: `yes, probably a straight yes. as a hopeless romantic who's never been in a relationship, i’ve always wanted a kind of love that never fades away, not after years, not even after decades. but how would i even define love ?
 
 for someone who believes this is our only life - no reincarnation, no second chances, why have i always been so scared to take risks in love ? maybe because, love always felt too fragile, infinite and honest at the same time for me. for me, love is something about comfort, quiet and simple understanding, or just growing together helping each other in return of nothing. but it can definitely also be about sharing pain, believing in distance dorsn’t really matter or just silence that keeps playing in between.
@@ -146,6 +131,21 @@ and then there's this question, do soulmates really exist, or is it just my mind
 as an infp (if you know mbti), it's really hard to build meaningful connections being that reserved, introverted or just under confident. it takes time, trust and a kind of quiet understanding. my mind says a name, maybe a person, maybe an illusion of one, or maybe just my way of comforting myself that there's still someone out there meant for me. maybe there's not.
 
 maybe that's what a soulmate is, not someone who completes you but someone who mirrors the part of you that you've been trying to understand all along.`
+    },
+    {
+      title: 'am i missing something ?',
+      slug: 'day-5',
+      date: 'November 4, 2025',
+      excerpt: " recently, i’ve been feeling like i’m missing something. maybe i’ve always felt that way as far back as i can remember, something like missing a part of myself that i never truly had. ",
+      content: `recently, i’ve been feeling like i’m missing something. maybe i’ve always felt that way as far back as i can remember, something like missing a part of myself that i never truly had.
+
+the warmth of a familiar touch, the call of home from thousand miles away, the kind of effortless happiness that's easy to exist. i miss love so deep i won't ever be able to express, or a true friendship which can keep me awake for the whole night for no specific reason. it's really hard to describe it, like how we long for some things and feel their absence without never defining it in simple terms.
+
+some days feel like i’m missing my own soul, though to be frank i don't believe in the concept of souls, the afterlife, or even anything beyond this one existence of life. but what is this ache that doesn't seem to end if it’s just not a soul ?
+
+maybe this is just nostalgia for a version of me that was never there, or condolences that i offer myself for the way i exist ?
+
+this ain't a call for prayer. as someone who don't want to believe in redemption, signs or just prayers, this is a just a reminder for myself - that even when i feel lost, there's still something inside me. i need to find it myself, and hope for a change.`
     },
     {
       title: 'comfort of everyday',
