@@ -116,6 +116,27 @@ export const TECHNICAL_SKILLS: SkillCategory[] = [
 
 export const BLOG_POSTS: BlogPost[] = [
     {
+      title: 'we can both be human',
+      slug: 'day-7',
+      date: 'November 14, 2025',
+      excerpt: " what makes us human ? is it the happiness we keep chasing, or the pain we learn to live with ? the guilt of creating something that turns bad, or the grief of losing something we thought it would stay for a long time. artists often say the best art comes from being broken - maybe that’s when we are the most human. we can fail, we will get hurt but we also feel - it’s just who we are being human. ",
+      content: ` *' "rest now, father. perhaps now, we can both be human." - creature'*
+
+what makes us human ? is it the happiness we keep chasing, or the pain we learn to live with ? the guilt of creating something that turns bad, or the grief of losing something we thought it would stay for a long time. artists often say the best art comes from being broken - maybe that’s when we are the most human. we can fail, we will get hurt but we also feel - it’s just who we are being human.
+
+the creature longs for human connection, first from his creator, and then from a world that never gave him chance. he wants to grow, he wants to belong, but he struggles, in a cruel world where he is seen as a monster. he didn’t ask to be born, yet punished for just existing. broken and discarded, like so many of us feel in our journey of life. he tries to understand his creation, don’t we all : where do we come from, and where do we go ?
+
+and even when his creator names him monster, he still learns. he witnesses the terrors of mankind, but he also understands sometime that’s how life is. wolves don’t hate the sheep and in the same way, wolves are not hated by the hunter but violence still exists. the whole world is harsh, but doesn’t need to be always personal.
+
+*' "to be lost and to be found, that is the lifespan of love." - elizabeth '*
+
+maybe love is exactly that, losing ourselves, finding ourselves and living in that brief moment in between. seeking and longing for something we can’t name, until it names us when the time arrives. love can grow, break and reshape itself completely around us. we long for warmth, recognition, or just a place to rest - maybe that’s what love is. even when the world turns cold, we long for someone just like our heart wants to keep reaching a new meaning.
+
+our lives are not defined by a singular choice, or a singular identity. we can break, we can rebuild, we can change. the toughest part is getting the motivation to do so, and in the best way, it have to come from within ourselves
+
+i was really moved by this movie. this isn’t a review - i am not capable of writing that. these thoughts are mine, mixed with others’ reviews i read up elsewhere. but the movie felt beautiful.`
+    },
+    {
       title: 'do i believe in soulmates ?',
       slug: 'day-6',
       date: 'November 8, 2025',
