@@ -192,7 +192,7 @@ i don't know. maybe you don't either. and that makes us the two of us.`
       title: 'for the two people who read this',
       slug: 'day-8',
       date: 'November 19, 2025',
-      excerpt: " dostoevsky once said, ' I want to talk about everything with at least one person as I talk about things with myself. ' ",
+      excerpt: " who am i writing for ? is it just for myself, to hear my own mind more clearly ? because, honestly, most of the time, all i do is talk to myself. dostoevsky once said, ' I want to talk about everything with at least one person as I talk about things with myself. ' ",
       content: ` who am i writing for ? is it just for myself, to hear my own mind more clearly ? because, honestly, most of the time, all i do is talk to myself. dostoevsky once said, “ I want to talk about everything with at least one person as I talk about things with myself. ” i am pessimistic about finding that one person ever, so maybe i want to keep writing for myself.
 
 and still, if only two people open the link and read this, i'm not unhappy about it. but in these modern times, when we live in a world of likes, followers and subscribers, it's hard to not think about it. a part of me still wonders who's listening.
@@ -209,7 +209,7 @@ am i being vulnerable now ? probably. but maybe that's what this space is for. `
       title: 'we can both be human',
       slug: 'day-7',
       date: 'November 14, 2025',
-      excerpt: " what makes us human ? is it the happiness we keep chasing, or the pain we learn to live with ? the guilt of creating something that turns bad, or the grief of losing something we thought it would stay for a long time. artists often say the best art comes from being broken - maybe that's when we are the most human. we can fail, we will get hurt but we also feel - it's just who we are being human. ",
+      excerpt: " what makes us human ? is it the happiness we keep chasing, or the pain we learn to live with ? the guilt of creating something that turns bad, or the grief of losing something we thought it would stay for a long time.  ",
       content: ` *' "rest now, father. perhaps now, we can both be human." - creature'*
 
 what makes us human ? is it the happiness we keep chasing, or the pain we learn to live with ? the guilt of creating something that turns bad, or the grief of losing something we thought it would stay for a long time. artists often say the best art comes from being broken - maybe that's when we are the most human. we can fail, we will get hurt but we also feel - it's just who we are being human.
@@ -296,7 +296,7 @@ maybe all we need is to learn to live in the brief silence, the one between a so
       title: '2:11 AM',
       slug: 'day-2',
       date: 'October 28, 2025',
-      excerpt: "so, it's currently 2:11 am. i promised myself yesterday that i'd write something everyday to make it into a habit, so here it goes. the world's currently asleep, at least in my timezone, but my mind is wide awake. there's a kind of peace the night arrives with, bringing silence yet heavy in its own way as silence doesn't always mean calmness.",
+      excerpt: "so, it's currently 2:11 am. i promised myself yesterday that i'd write something everyday to make it into a habit, so here it goes. the world's currently asleep, at least in my timezone, but my mind is wide awake. ",
       content: `so, it's currently 2:11 am.
 
 i promised myself yesterday that i'd write something everyday to make it into a habit, so here it goes. the world's currently asleep, at least in my timezone, but my mind is wide awake. there's a kind of peace the night arrives with, bringing silence yet heavy in its own way as silence doesn't always mean calmness.
