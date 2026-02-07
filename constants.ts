@@ -46,7 +46,7 @@ export const EXPERIENCE: Experience[] = [
     {
         company: 'Fraunhofer IGD',
         role: 'Master Thesis',
-        duration: 'July 2025 – Present', // Note: Year might be a typo in resume, assuming 2024 or future
+        duration: 'July 2025 – Jan 2026', 
         description: [
             'Developing a novel, privacy-preserving framework for on-device face identification on memory-constrained microcontrollers (< 1MB RAM).',
             'Designing efficient deep learning architecture using various model optimizing techniques such as pruning, quantization and knowledge distillation.',
