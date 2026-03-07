@@ -116,11 +116,28 @@ export const TECHNICAL_SKILLS: SkillCategory[] = [
 
 export const BLOG_POSTS: BlogPost[] = [
     {
+      title: 'is writing my therapy ?',
+      slug: 'day-13',
+      date: 'March 06, 2026',
+      excerpt: " i was checking out my keep notes app yesterday night. it has seen a lot for last six-seven years. from short quotes to proses written by me, from restaurant orders to tourist place itineraries, it has kept all those inside, like a quiet place forever hidden. ",
+      content: `i was checking out my keep notes app yesterday night. it has seen a lot for last six-seven years. from short quotes to proses written by me, from restaurant orders to tourist place itineraries, it has kept all those inside, like a quiet place forever hidden. i have never kept a journal myself, or written resolutions. but i thought of writing more in substack four months back, it slowly became a way to wind down when the mind starts to feel crowded. the feeling of getting lighter after writing something is what i want to feel it more often. like telling someone close how your day went. or what you were feeling. there might not be much to say, but you still share it anyway. i never planned to write meaningful posts, it’s all just random thoughts poured down. but somehow, it feels like necessary.
+
+is writing actually therapy ? or is it just me organizing my overthinking ? sometimes i can’t really gather what i am healing from, or what uncomfortable feelings i have dealt with. but writing gives some sort of clarity, although sometime i just blabber out and write nonsensenical messy stuffs. so once written, does it really help my emotions feel less chaotic. or am i just revisiting the same old emotions again and again ? like there’s no end to it. so am i reliving things that i should have left behind a long time ago ?
+
+but this also brings me to another thought, why not just keep a personal diary ? why show everyone and share it online ? then i think maybe even one person can relate, and they feel comforted knowing that someone out there is also feeling what they feel, or just dealing with the same mess our brain keeps making. nowadays people hide a lot and show their happy faces to the whole world while keeping their tears hidden. maybe that’s bound to happen because it feels like judging people has grown a lot. so maybe writing things out publicly keeps me honest in some way.
+
+sometimes i feel like i shared too much. then there are days i share nothing and keep everything buried. writing exposes parts of us that we rarely say out loud, the parts that are supposed to be the most vulnerable. but as a friend said recently, sometimes we feel more because those feelings are more real. maybe that’s what makes a person mature, to know their own emotions, understand them, and also learn how to act upon them.
+
+okay like everytime, there’s no real ending. maybe writing is simply how i try to understand life. although these sentences might get too philosophical, or might not always directly with my own life, maybe this is just how i want to explore my thoughts and sometimes the thoughts of others too.`
+    },
+    {
       title: 'quotes from movies (and one kdrama) i watched in the first two months of 2026',
       slug: 'day-12',
       date: 'March 01, 2026',
       excerpt: " a small collection of lines that stayed with me for the first two months of 2026. ",
-      content: `“home is where you can be entirely yourself. in fact, home doesn’t have to be a place at all. it doesn’t matter where you go or what you do. when you’re with the person who loves you for you, you’re always home.” - poppy (people we meet on vacation)
+      content: ` *a small collection of lines that stayed with me for the first two months of 2026.*
+
+“home is where you can be entirely yourself. in fact, home doesn’t have to be a place at all. it doesn’t matter where you go or what you do. when you’re with the person who loves you for you, you’re always home.” - poppy (people we meet on vacation)
 
 “you know i've had my head tilted up to the stars for as long as i can remember. you know what surprised me the most? it wasn't meeting them. it was meeting you.” - ian (arrival)
 
