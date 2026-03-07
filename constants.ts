@@ -116,6 +116,40 @@ export const TECHNICAL_SKILLS: SkillCategory[] = [
 
 export const BLOG_POSTS: BlogPost[] = [
     {
+      title: 'quotes from movies (and one kdrama) i watched in the first two months of 2026',
+      slug: 'day-12',
+      date: 'March 01, 2026',
+      excerpt: " a small collection of lines that stayed with me for the first two months of 2026. ",
+      content: `“home is where you can be entirely yourself. in fact, home doesn’t have to be a place at all. it doesn’t matter where you go or what you do. when you’re with the person who loves you for you, you’re always home.” - poppy (people we meet on vacation)
+
+“you know i've had my head tilted up to the stars for as long as i can remember. you know what surprised me the most? it wasn't meeting them. it was meeting you.” - ian (arrival)
+
+“love isn’t just one happy moment, right? it’s a million. and it’s bickering in the car, and supporting someone when they need it, and it’s growing together, and looking after each other.” - joan (eternity)
+
+“no matter what anybody tells you, words and ideas can change the world.” - keating (dead poets society)
+
+“he loves me for what i am, not what i ought to be.” - agnes (hamnet)
+
+“you’re not perfect, sport, and let me save you the suspense: this girl you’ve met, she’s not perfect either. but the question is whether or not you’re perfect for each other.” - sean (good will hunting)
+
+“you’ll never have that kind of relationship in a world where you’re afraid to take the first step because all you see is every negative thing 10 miles down the road.” - sean (good will hunting)
+
+“do you know why sunsets are exhilarating? sometimes they’re bright red with happiness, sometimes they’re dark and mournful. but the sky always accepts the sunset as it is.”- sore (sore: a wife from the future)
+
+“life is suffering. it is hard. the world is cursed. but still, you find reasons to keep living.” - osa (princess mononoke)
+
+“you cannot change fate. however, you can rise to meet it, if you so choose.” - hii-sama (princess mononoke)
+
+“maybe we could express ourselves more fully if we say it without words.” - patricia (the darjeeling limited)
+
+“that might sound boring, but I think the boring stuff is the stuff I remember the most.” - russell (up)
+
+“there are as many languages as there are people. everyone speaks their own language. that’s why people misunderstand, minterpret and offend each other.” - mr. kim (can this love be translated ?)
+
+“It’s only natural to feel anxious when things might not work out. still, though, you go in with an inkling of hope that they just might.” - cha mu hee (can this love be translated ?)
+      `
+    },
+    {
       title: '2025 : A Year in Review',
       slug: 'day-11',
       date: 'December 31, 2025',
